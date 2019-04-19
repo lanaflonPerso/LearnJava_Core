@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.trl</groupId>
+    <artifactId>LearnJava_Core</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+
+    <!--=================================================== Maven ===================================================-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>${java.version_8}</source>
+                    <target>${java.version_8}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+    <!--================================================= Properties ================================================-->
+    <properties>
+
+        <!--============ Maven Settings ============-->
+        <java.version_8>8</java.version_8>
+        <java.version_11>11</java.version_11>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+
+        <!--============ JDBC ============-->
+        <org.postgresql.groupId>org.postgresql</org.postgresql.groupId>
+        <org.postgresql.version>42.2.5</org.postgresql.version>
+        <org.postgresql.scope>runtime</org.postgresql.scope>
+
+        <mysql.version>8.0.11</mysql.version>
+        <!--<mysql.version>5.1.36</mysql.version>-->
+
+    </properties>
+
+
+
+    <!--================================================ Dependencies ===============================================-->
+    <dependencies>
+
+        <!--============ JDBC ============-->
+        <dependency>
+            <groupId>${org.postgresql.groupId}</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${org.postgresql.version}</version>
+            <scope>${org.postgresql.scope}</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
