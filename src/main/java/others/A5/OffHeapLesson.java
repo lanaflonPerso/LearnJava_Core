@@ -1,10 +1,9 @@
 package others.A5;
 
-import sun.misc.Unsafe;
+//import sun.misc.Unsafe;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
@@ -36,20 +35,20 @@ public class OffHeapLesson {
         int bytesRead = fileChannel.read(buffer);
 
 //        Unsafe unsafe = Unsafe.getUnsafe();
-        Field field = Unsafe.class.getDeclaredField("theUnsafe");
-        field.setAccessible(true);
-        Unsafe unsafe = (Unsafe)field.get(null);
-        long startIndex = unsafe.allocateMemory(1024);
-        System.out.println(startIndex);
-        unsafe.putInt(startIndex , 5);
-        unsafe.putInt(startIndex + 4, 10);
-        System.out.println(unsafe.getInt(startIndex));
-        System.out.println(unsafe.getByte(startIndex + 4));
+//        Field field = Unsafe.class.getDeclaredField("theUnsafe");
+//        field.setAccessible(true);
+//        Unsafe unsafe = (Unsafe)field.get(null);
+//        long startIndex = unsafe.allocateMemory(1024);
+//        System.out.println(startIndex);
+//        unsafe.putInt(startIndex , 5);
+//        unsafe.putInt(startIndex + 4, 10);
+//        System.out.println(unsafe.getInt(startIndex));
+//        System.out.println(unsafe.getByte(startIndex + 4));
 //        Student student = (Student)unsafe.allocateInstance(Student.class);
 //        student.name = "Max";
 //        System.out.println(student.name);
 //        System.out.println(student.age);
-        unsafe.freeMemory(startIndex);
+//        unsafe.freeMemory(startIndex);
     }
     static class Student {
         String name;
