@@ -8,18 +8,18 @@ public class CheckInherited_0x1 {
 
 class A1{
     public static void f(){
-        System.out.println("a.f()");
+        System.out.println("a.methodoImprimir()");
     }
 
     public  void g(){
-        System.out.println("a.f()");
+        System.out.println("a.methodoImprimir()");
     }
 }
 
 class B1 extends A1{
 
-//    public void f(){ System.out.println("b.f()"); }
+//    public void methodoImprimir(){ System.out.println("b.methodoImprimir()"); }
 //
-//    public static void g(){ System.out.println("b.f()"); }
+//    public static void g(){ System.out.println("b.methodoImprimir()"); }
 }
 

@@ -16,7 +16,7 @@ public class CheckInherited_0x3 {
 
 class A3{
     public void f(){
-        System.out.println("a.f()");
+        System.out.println("a.methodoImprimir()");
     }
 }
 
@@ -24,7 +24,7 @@ class A3{
 
 class B3 extends A3{
     public void f(){
-        System.out.println("b.f()");
+        System.out.println("b.methodoImprimir()");
     }
 }
 
@@ -32,6 +32,6 @@ class B3 extends A3{
 
 class C3 extends B3{
     public void g(){
-        System.out.println("c.f()");
+        System.out.println("c.methodoImprimir()");
     }
 }

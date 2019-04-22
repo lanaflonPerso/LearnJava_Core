@@ -1,19 +1,22 @@
 package generics;
 
 public class ExampleGenericMethods {
+
     public static void main(String[] args) {
+
         ExampleGenericMethods gm = new ExampleGenericMethods();
-        gm.f("");
-        gm.f(1);
-        gm.f(1.0);
-        gm.f(1.0F);
-        gm.f('c');
-        gm.f(gm);
-        gm.<ExampleGenericMethods>f(gm);
+
+        gm.methodoImprimir("");
+        gm.methodoImprimir(1);
+        gm.methodoImprimir(1.0);
+        gm.methodoImprimir(1.0F);
+        gm.methodoImprimir('c');
+        gm.methodoImprimir(gm);
+        gm.methodoImprimir(gm);
     }
 
 
-    public <T> void f(T x) {
+    public <T> void methodoImprimir(T x) {
         System.out.println(x.getClass().getName());
     }
 }

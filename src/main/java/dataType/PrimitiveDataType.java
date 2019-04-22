@@ -85,7 +85,7 @@ public class PrimitiveDataType {
 //======================================================================================================================
 
         // The float data type can store fractional numbers from 3.4e−038 to 3.4e+038. Note that you should end
-        // the value with an "f" or "F":
+        // the value with an "methodoImprimir" or "F":
         float myFloat = 5.75f;
         float myFloat_1 = 5.75F;
 //        System.out.println(myFloat);

@@ -25,7 +25,9 @@ public class GenericAlgorithms {
 }
 
 class ClassAlg {
+
     public static <T extends Comparable> T[] minmax(IntFunction<T[]> constr, T... a) {
+
         T[] mm = constr.apply(2);
         T min = a[0];
         T max = a[0];
