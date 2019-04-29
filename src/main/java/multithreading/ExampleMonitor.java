@@ -1,4 +1,4 @@
-package Examples.Multithreading;
+package multithreading;
 
 public class ExampleMonitor {
 	static volatile boolean inVolatile = false;

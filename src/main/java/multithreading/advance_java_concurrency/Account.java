@@ -4,6 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Account {
+
     private /*volatile*/ int balance;
     private final Lock lock;
 

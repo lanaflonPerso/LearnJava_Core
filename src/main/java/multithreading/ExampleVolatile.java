@@ -1,40 +1,47 @@
-package Examples.Multithreading;
+package multithreading;
 
 public class ExampleVolatile {
-	private final static int N = 1_000_000;
-	private volatile static int counter = 0;
 
-	public static void main(String[] args) {
+    private final static int N = 1_000_000;
+    private volatile static int counter = 0;
+
+    public static void main(String[] args) {
 //---------------------------------Ne-Prevelnoe-rewenie--------------------------------------------------
-		Thread thread_1 = new Thread(new Runnable() {
-			@Override
-			public void run() {
-				for (int i = 0; i < N; i++) {counter++;}
-			}
-		});
+        Thread thread_1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i < N; i++) {
+                    counter++;
+                }
+            }
+        });
 
-		Thread thread_2 = new Thread(new Runnable() {
-			@Override
-			public void run() {
-				for (int i = 0; i < N; i++) {counter++;}
-			}
-		});
+        Thread thread_2 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i < N; i++) {
+                    counter++;
+                }
+            }
+        });
 
-		thread_1.start();
-		thread_2.start();
+        thread_1.start();
+        thread_2.start();
 
-		try {
-			thread_1.join();
-			thread_2.join();
-		} catch (InterruptedException e) {e.printStackTrace();}
-		System.out.println(counter);
+        try {
+            thread_1.join();
+            thread_2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(counter);
 //-------------------------------------------------------------------------------------------------------------------
-	}
+    }
 }
 
 /*
  * -----------------------------------------------------------------------------
- * Разделяемые переменные могут быть объявлены как volatile, при условии, что над 
+ * Разделяемые переменные могут быть объявлены как volatile, при условии, что над
  * ними не выполняется никаких операций, кроме присваивания.
  * -----------------------------------------------------------------------------
  * ------------------------------------------- Ключевое слово volatile

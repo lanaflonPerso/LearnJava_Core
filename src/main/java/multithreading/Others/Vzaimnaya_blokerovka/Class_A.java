@@ -1,7 +1,8 @@
-package Examples.Multithreading.Vzaimnaya_blokerovka;
+package multithreading.Others.Vzaimnaya_blokerovka;
 
 // An example of deadlock.
 public class Class_A {
+
     synchronized void foo(Class_B class_b) {
         String name = Thread.currentThread().getName();
 

@@ -1,4 +1,4 @@
-package Examples.Multithreading;
+package multithreading;
 
 public class ExampleFinalMultithreading {
     static StrNotFinal strNotFinal;  // unsafe publishing
@@ -131,7 +131,7 @@ class StrFinal {
     }
 }
 
-class FinalFieldExample{
+class FinalFieldExample {
     final int valueFinal;
     int valueNotFinal;
     static FinalFieldExample finalFieldExample;
@@ -141,14 +141,14 @@ class FinalFieldExample{
         this.valueNotFinal = 4;
     }
 
-    public static void write(){
+    public static void write() {
         finalFieldExample = new FinalFieldExample();
     }
 
-    public static void reader(){
-            if (finalFieldExample != null){
-                System.out.println("valueFinal = " + finalFieldExample.valueFinal);
-                System.out.println("valueNotFinal = " + finalFieldExample.valueNotFinal);
-            }
+    public static void reader() {
+        if (finalFieldExample != null) {
+            System.out.println("valueFinal = " + finalFieldExample.valueFinal);
+            System.out.println("valueNotFinal = " + finalFieldExample.valueNotFinal);
+        }
     }
 }

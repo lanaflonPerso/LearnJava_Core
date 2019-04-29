@@ -1,4 +1,4 @@
-package Examples.OOP;
+package oop;
 
 public class ExampleIncrementDecrement {
     public static void main(String[] args) {

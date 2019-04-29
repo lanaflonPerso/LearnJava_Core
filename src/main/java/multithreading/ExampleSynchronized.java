@@ -1,35 +1,27 @@
-package Examples.Multithreading;
+package multithreading;
 
 public class ExampleSynchronized {
 
     private final static int N = 1_000_000;
     private static int counter = 0;
 
-    public synchronized static int increment(){
+    public synchronized static int increment() {
         return counter++;
     }
 
     public static void main(String[] args) throws InterruptedException {
 
-        Thread thread_1 = new Thread(new Runnable() {
+        Thread thread_1 = new Thread(() -> {
 
-            @Override
-            public void run() {
-
-                for(int i = 0; i < N; i++){
-                    increment();
-                }
+            for (int i = 0; i < N; i++) {
+                increment();
             }
         });
 
-        Thread thread_2 = new Thread(new Runnable() {
+        Thread thread_2 = new Thread(() -> {
 
-            @Override
-            public void run() {
-
-                for(int i = 0; i < N; i++){
-                    increment();
-                }
+            for (int i = 0; i < N; i++) {
+                increment();
             }
         });
 

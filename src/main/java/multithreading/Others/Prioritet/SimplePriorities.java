@@ -1,4 +1,4 @@
-package Examples.Multithreading.Prioritet;
+package multithreading.Others.Prioritet;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

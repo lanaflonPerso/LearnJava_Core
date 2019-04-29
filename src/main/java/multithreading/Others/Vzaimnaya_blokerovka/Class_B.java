@@ -1,6 +1,7 @@
-package Examples.Multithreading.Vzaimnaya_blokerovka;
+package multithreading.Others.Vzaimnaya_blokerovka;
 
 public class Class_B {
+
     synchronized void bar(Class_A age) {
         String name = Thread.currentThread().getName();
         System.out.println(name + " entered B.bar");

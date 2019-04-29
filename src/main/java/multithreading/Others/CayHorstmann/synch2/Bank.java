@@ -1,4 +1,4 @@
-package Examples.Multithreading.CayHorstmann.synch2;
+package multithreading.Others.CayHorstmann.synch2;
 
 import java.util.Arrays;
 
@@ -14,7 +14,6 @@ public class Bank {
 	/**
 	 * Constructs the bank.
 	 * 
-	 * @param nnumberccounts
 	 *            the number of accounts
 	 * @param initialBalance
 	 *            the initial balance for each account

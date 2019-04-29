@@ -1,4 +1,4 @@
-package Examples.Multithreading.Vzaimnaya_blokerovka;
+package multithreading.Others.Vzaimnaya_blokerovka;
 
 public class Deadlock implements Runnable {
     Class_A class_a = new Class_A();

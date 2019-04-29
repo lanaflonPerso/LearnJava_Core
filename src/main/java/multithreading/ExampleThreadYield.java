@@ -1,4 +1,4 @@
-package Examples.Multithreading;
+package multithreading;
 
 public class ExampleThreadYield {
     public static void main(String[] args) {

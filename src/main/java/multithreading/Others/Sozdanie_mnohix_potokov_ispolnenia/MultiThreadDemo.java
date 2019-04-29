@@ -1,4 +1,4 @@
-package Examples.Multithreading.Sozdanie_mnohix_potokov_ispolnenia;
+package multithreading.Others.Sozdanie_mnohix_potokov_ispolnenia;
 
 public class MultiThreadDemo {
     public static void main(String args[]) {
