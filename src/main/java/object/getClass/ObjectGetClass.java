@@ -19,6 +19,11 @@ public class ObjectGetClass {
 
         System.out.println(arrayListString1.getClass() == arrayListInteger1.getClass());
         System.out.println(arrayListString1.equals(arrayListInteger1));
+
+        System.out.println("--------------------------");
+        System.out.println(arrayListInteger.getClass());
+        System.out.println(arrayListInteger.getClass().getName());
+        System.out.println(arrayListInteger.getClass().getSimpleName());
     }
 }
 
