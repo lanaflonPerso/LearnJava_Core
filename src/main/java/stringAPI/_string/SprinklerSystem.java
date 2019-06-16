@@ -1,4 +1,4 @@
-package Examples.String_API._String;
+package stringAPI._string;
 
 class WaterSource {
     private String s;
