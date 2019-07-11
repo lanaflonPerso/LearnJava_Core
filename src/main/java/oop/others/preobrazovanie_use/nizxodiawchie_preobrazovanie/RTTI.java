@@ -1,4 +1,4 @@
-package Examples.OOP.Others.preobrazovanie_use.nizxodiawchie_preobrazovanie;
+package oop.others.preobrazovanie_use.nizxodiawchie_preobrazovanie;
 
 public class RTTI{
     public static void main(String[] args) {

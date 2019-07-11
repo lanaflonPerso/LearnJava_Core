@@ -1,4 +1,4 @@
-package Examples.String_API._StringBuffer;
+package stringAPI._StringBuffer;
 
 // Demonstrate append().
 public class ExampleAppendStringBuffer {

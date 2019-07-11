@@ -1,6 +1,7 @@
-package Examples.OOP.Others.override;
+package oop.others.overload;
 
 public class Mavpa {
+
     void p(int i){
         System.out.println("Metod s odnum arhumentom");
     }

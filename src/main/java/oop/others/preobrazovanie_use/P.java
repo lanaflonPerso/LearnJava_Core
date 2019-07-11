@@ -1,4 +1,4 @@
-package Examples.OOP.Others.preobrazovanie_use;
+package oop.others.preobrazovanie_use;
 
 public class P {
 }

@@ -1,6 +1,6 @@
-package Examples.OOP.Others.preobrazovanie_use.vosxodiawchee_preobrazovanie;
+package oop.others.preobrazovanie_use.vosxodiawchee_preobrazovanie;
 
-public class Frog extends Anphibia{
+public class Frog extends Anphibia {
     @Override
     protected void hretsaNaSonce(boolean b) {
         super.hretsaNaSonce(b);

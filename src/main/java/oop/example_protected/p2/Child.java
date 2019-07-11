@@ -1,6 +1,6 @@
-package oop.ExampleProtected.p2;
+package oop.example_protected.p2;
 
-import oop.ExampleProtected.p1.Parent;
+import oop.example_protected.p1.Parent;
 
 //in file B.java
 public class Child extends Parent {

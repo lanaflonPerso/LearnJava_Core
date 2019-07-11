@@ -9,6 +9,7 @@ public class ExamplePostIncrementPreIncrement {
         int c = 2;
         c++;
         System.out.println(c);
+
 //        c = c++; // 3
         c = ++c; // 4
         System.out.println(c);
@@ -26,6 +27,7 @@ public class ExamplePostIncrementPreIncrement {
         System.out.println(a);
 // ---------------------------------------------------------------------------------------------------------------------
     }
+
 }
 
 

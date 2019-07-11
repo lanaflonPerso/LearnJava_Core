@@ -1,4 +1,4 @@
-package Examples.OOP.Others.preobrazovanie_use.vosxodiawchee_preobrazovanie;
+package oop.others.preobrazovanie_use.vosxodiawchee_preobrazovanie;
 
 public class Anphibia {
     protected void lazat(int velosidad){

@@ -1,4 +1,4 @@
-package YouTube_Channels.Golovach_Courses.Java_Core_December_2013.Core_OOP_3_December_2013;
+package oop.others.Golovach;
 
 public class App_0x0 {
     private int i = 9;

@@ -1,4 +1,4 @@
-package oop.ExampleProtected.p1;
+package oop.example_protected.p1;
 
 //in file A.java
 public class Parent{
