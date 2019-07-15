@@ -11,22 +11,22 @@ public class String_Pool {
 
         String s3 = new String("Hello");
 
-        System.out.println(s1.equals(s2));
-        System.out.println(s1.equals(s6));
-        System.out.println(s1 == s2);
-        System.out.println(s6 == s2);
-        System.out.println(s1 == s6);
+        System.out.println("s1.equals(s2) --> " + s1.equals(s2));
+        System.out.println("s1.equals(s6) --> " + s1.equals(s6));
+        System.out.println("(s1 == s2) --> " + (s1 == s2));
+        System.out.println("(s6 == s2) --> " + (s6 == s2));
+        System.out.println("(s1 == s6) --> " + (s1 == s6));
 
         System.out.println();
-        System.out.println(s3.equals(s1));
-        System.out.println(s3.equals(s2));
-        System.out.println(s3.equals(s6));
+        System.out.println("s3.equals(s1) --> " + s3.equals(s1));
+        System.out.println("s3.equals(s2) --> " + s3.equals(s2));
+        System.out.println("s3.equals(s6) --> " + s3.equals(s6));
 
         System.out.println();
-        System.out.println(s3.intern() == s1);
-        System.out.println(s3 == s1);
-        System.out.println(s3 == s2);
-        System.out.println(s3 == s6);
+        System.out.println("(s3.intern() == s1) --> " + (s3.intern() == s1));
+        System.out.println("(s3 == s1) --> " + (s3 == s1));
+        System.out.println("(s3 == s2) --> " + (s3 == s2));
+        System.out.println("(s3 == s6) --> " + (s3 == s6));
     }
 }
 
