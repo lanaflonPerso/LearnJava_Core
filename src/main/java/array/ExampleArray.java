@@ -1,10 +1,6 @@
 package array;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
@@ -19,18 +15,18 @@ public class ExampleArray {
         argA[0] =
         argA[1] =
         argA[2] = 3;
-//        System.out.println(Arrays.toString(argA));
+        System.out.println(Arrays.toString(argA));
 
 //======================================================================================================================
 //======================================================================================================================
 //======================================================================================================================
 
-        Path path = Paths.get("core/src/main/resources/IO/alice30.txt");
-        String contents = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
+//        Path path = Paths.get("core/src/main/resources/IO/alice30.txt");
+//        String contents = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
 //        System.out.println(contents);
 
         // If instead of a collection there is an array, then the Stream.of() method serves for this purpose.
-        Stream<String> words = Stream.of(contents.split("\\PL+"));
+//        Stream<String> words = Stream.of(contents.split("\\PL+"));
 //        words.forEach(i -> System.out.println(i));
 
         //The of() method has receive parameter varargs, therefore, a data stream can be created from any number
@@ -68,8 +64,8 @@ public class ExampleArray {
         // Attention here two arrays refer to the same link
         int[] array6 = array2;
         array6[11] = 22;
-        System.out.println(Arrays.toString(array2));  // [1, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0]
-        System.out.println(Arrays.toString(array6));  // [1, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0]
+//        System.out.println(Arrays.toString(array2));  // [1, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0]
+//        System.out.println(Arrays.toString(array6));  // [1, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0]
 
         // And so the arrays do not reference the same link
         int[] array7 = Arrays.copyOf(array2, array2.length);
