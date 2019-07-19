@@ -18,5 +18,24 @@ public class TernaryOperator {
         System.out.println((luck_2 > 10 ? luck_2++ : --luck_2) < 10);
         System.out.println((luck_2 > 10 ? luck_2++ : --luck_2));
 // ---------------------------------------------------------------------------------------------------------------------
+
+        //int x = 5;
+        //int x = 2;
+        int x = 8;
+        System.out.println(x > 2 ? x < 4 ? 10 : 8 : 7);
+
+        /*
+
+        x > 2 ?
+            (x < 4 ? 10
+                      :
+                   8
+            ):
+            7
+
+            link: http://www.java2s.com/Tutorials/Java/OCA_Java_SE_8_Operators_Statements/Q2-2.htm
+        */
+
+// ---------------------------------------------------------------------------------------------------------------------
     }
 }
