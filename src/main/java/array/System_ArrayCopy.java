@@ -1,6 +1,5 @@
 package array;
 
-
 import java.util.Arrays;
 
 import static java.lang.System.arraycopy;
@@ -24,14 +23,14 @@ public class System_ArrayCopy {
 //======================================================================================================================
 
         int[] arrNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] arrZers = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] arrZeros = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 //        out.println("arr0 = " + Arrays.toString(arrNumbers));
-//        out.println("arr1 = " + Arrays.toString(arrZers));
+//        out.println("arr1 = " + Arrays.toString(arrZeros));
 
 //        out.println();
-        arraycopy(arrNumbers, 1, arrZers, 2, 3);
-//        out.println("arr1 = " + Arrays.toString(arrZers));
+        arraycopy(arrNumbers, 1, arrZeros, 2, 3);
+//        out.println("arr1 = " + Arrays.toString(arrZeros));
 
 //======================================================================================================================
 //======================================================================================================================
@@ -44,45 +43,48 @@ public class System_ArrayCopy {
         arraycopy(arr0, 1, arr0, 3, 3);
 //        out.println("arr0 = " + Arrays.toString(arr0));
 
-
-
 //======================================================================================================================
 //======================================================================================================================
 //======================================================================================================================
 
-        int[] argsA = new int[7];
-        int[] argsB = new int[10];
+        String[] argsA = new String[7];
+        String[] argsB = new String[10];
 
-        Arrays.fill(argsA, 47);
-        Arrays.fill(argsB, 99);
+        Arrays.fill(argsA, "A");
+        Arrays.fill(argsB, "B");
 
-        out.println("\n------------------------------------------------- 1");
-        out.println("argsA = " + Arrays.toString(argsA));
-        out.println("argsB = " + Arrays.toString(argsB));
+//        out.println("\n------------------------------------------------- 1");
+//        out.println("argsA = " + Arrays.toString(argsA));
+//        out.println("argsB = " + Arrays.toString(argsB));
         arraycopy(argsA, 0, argsB, 0, argsA.length);
-        out.println("argsB = " + Arrays.toString(argsB));
+//        out.println("argsB = " + Arrays.toString(argsB));
 
-        out.println("\n------------------------------------------------- 2");
-        int[] argsC = new int[5];
-        Arrays.fill(argsC, 103);
+//        out.println("\n------------------------------------------------- 2");
+        String[] argsC = new String[5];
+        Arrays.fill(argsC, "C");
         arraycopy(argsA, 0, argsC, 0, argsC.length);
-        out.println("argsC = " + Arrays.toString(argsC));
+//        out.println("argsC = " + Arrays.toString(argsC));
 
         out.println("\n------------------------------------------------- 3");
-        Arrays.fill(argsC, 103);
-        arraycopy(argsC, 0, argsA, 0, argsC.length);
-        out.println("argsA = " + Arrays.toString(argsA));
+        Arrays.fill(argsC, "C");
+//        arraycopy(argsA, 0, argsC, 0, argsA.length);   // ERROR
+//        out.println("argsC = " + Arrays.toString(argsC));
 
-        out.println("\n------------------------------------------------- 4");
+//        out.println("\n------------------------------------------------- 4");
+        Arrays.fill(argsC, "C");
+        arraycopy(argsC, 0, argsA, 0, argsC.length);
+//        out.println("argsA = " + Arrays.toString(argsA));
+
+//        out.println("\n------------------------------------------------- 5");
 //         Objects:
         Integer[] argsD = new Integer[10];
         Integer[] argsE = new Integer[5];
         Arrays.fill(argsD, 47);
         Arrays.fill(argsE, 99);
-        out.println("argsD = " + Arrays.toString(argsD));
-        out.println("argsE = " + Arrays.toString(argsE));
+//        out.println("argsD = " + Arrays.toString(argsD));
+//        out.println("argsE = " + Arrays.toString(argsE));
         arraycopy(argsE, 0, argsD, argsD.length/2, argsE.length);
-        out.println("argsD = " + Arrays.toString(argsD));
+//        out.println("argsD = " + Arrays.toString(argsD));
 
 //======================================================================================================================
 //======================================================================================================================
