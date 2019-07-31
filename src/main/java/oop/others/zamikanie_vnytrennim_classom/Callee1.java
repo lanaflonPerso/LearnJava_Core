@@ -1,11 +1,11 @@
-package Examples.OOP.Others.zamikanie_vnytrennim_classom;
+package oop.others.zamikanie_vnytrennim_classom;
 
-public class Callee1  implements Incrementable {
+public class Callee1  implements Incremental {
 
     private int i = 0;
 
     @Override
-    public void incrementIncrementable() {
+    public void incrementIncremental() {
         i++;
         System.out.println(i);
     }

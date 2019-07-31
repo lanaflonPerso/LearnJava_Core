@@ -1,9 +1,12 @@
-package Examples.OOP.Others.zamikanie_vnytrennim_classom;
+package oop.others.zamikanie_vnytrennim_classom;
 
 // Prosto realizem interface
 
 public class Caller{
-    private Incrementable callbackReference;
-    Caller(Incrementable cbk){callbackReference = cbk;}
-    void go(){callbackReference.incrementIncrementable();}
+
+    private Incremental callbackReference;
+
+    Caller(Incremental cbk){callbackReference = cbk;}
+
+    void go(){callbackReference.incrementIncremental();}
 }

@@ -1,4 +1,4 @@
-package Examples.OOP.Others.zamikanie_vnytrennim_classom;
+package oop.others.zamikanie_vnytrennim_classom;
 
 public class MyIncrement {
 
