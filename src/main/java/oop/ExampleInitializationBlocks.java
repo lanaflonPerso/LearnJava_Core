@@ -1,4 +1,4 @@
-package Examples.OOP;
+package oop;
 
 
 public class ExampleInitializationBlocks extends Parent{
@@ -22,8 +22,8 @@ class Hello{
     }
 }
 
-class Parent{
-    public Parent() {
+class Parent_A{
+    public Parent_A() {
         System.out.println("Constructor classa parenta!!!");
     }
 
@@ -36,7 +36,7 @@ class Parent{
     }
 }
 
-class Child extends Parent{
+class Child extends Parent_A{
     public Child() {
         System.out.println("Constructor classa Child!!!");
     }

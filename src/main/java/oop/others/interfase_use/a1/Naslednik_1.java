@@ -1,4 +1,4 @@
-package Examples.OOP.Others.interfase_use.a1;
+package oop.others.interfase_use.a1;
 
 public class Naslednik_1 extends Bazovvui{
     private static int a = 3;

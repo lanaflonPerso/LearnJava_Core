@@ -1,7 +1,16 @@
 package exceptions;
 
 public class ExampleRuntimeException {
+    public static void main(String[] args) {
+        System.out.println("Hello!!!");
+        method();
+        System.out.println("Good Bye!!!");
+    }
 
+
+    public static void method () {
+        throw new IllegalArgumentException("Parameter is incorrect.");
+    }
 }
 
 /*

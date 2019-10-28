@@ -1,10 +1,9 @@
 package oop;
 
-
 /**
  * Komentarii k klasy
  *
- * @autor DTRL
+ * @autor TRL
  * */
 public class ExampleJavaDoc {
 

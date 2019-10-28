@@ -1,4 +1,4 @@
-package Examples.OOP;
+package oop;
 
 public class ExampleOsnovanie_Ischeslenie {
     public static void main(String[] args) {
